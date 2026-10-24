@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="Portfolio de Romain Turpin, ingénieur géomaticien. Cartographie, SIG, analyse de données et projets géomatiques locaux.">
+    <meta property="og:title" content="Romain Turpin — Ingénieur géomaticien">
+    <meta property="og:description" content="Cartographie, SIG, analyse de données et projets géomatiques. Master de géographie à Rennes 2.">
+    <title>Romain Turpin — Ingénieur géomaticien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+        <div class="topbar shell">
+            <a class="wordmark" href="#accueil" aria-label="Romain Turpin, accueil">RT<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="menu-toggle-label">Menu</span>
+                <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+                <a href="#projets">Projets</a>
+                <a href="#stage">Stage</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#competences">Compétences</a>
+                <a href="#contact" class="nav-contact">Me contacter <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="hero shell" id="accueil" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Ingénieur géomaticien · Rennes, France</p>
+                <h1 id="hero-title">Romain<br><span>Turpin</span><span class="hero-period">.</span></h1>
+                <div class="hero-bottom">
+                    <p class="hero-role">Ingénieur géomaticien<br>spécialisé en environnement</p>
+                    <p class="hero-intro">Master Géographie et géomatique à Rennes 2 · Cartographie, analyse spatiale et données territoriales.</p>
+                </div>
+                <a class="internship-teaser" href="#stage"><span>En recherche de stage</span><span>Master · mai à septembre <b aria-hidden="true">↘</b></span></a>
+                <a class="text-link hero-link" href="#projets">Découvrir les projets <span aria-hidden="true">↓</span></a>
+            </div>
+            <figure class="hero-art hero-map-art">
+                <img class="hero-map-image" src="TURPIN_LP/TURPIN_LP/projet/apercu-devoir-cartographique.jpg" alt="Carte du plan d’intervention incendie dans le secteur de Gap et du lac de Serre-Ponçon, réalisée pour le parc national des Écrins.">
+                <figcaption class="hero-map-caption">Devoir de cartographie · Parc national des Écrins</figcaption>
+            </figure>
+        </section>
+
+        <section class="projects-section" id="projets" aria-labelledby="projects-title">
+            <div class="shell">
+                <div class="section-heading">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Projets de cartographie et géomatique</p>
+                    <div class="heading-row">
+                        <h2 id="projects-title">Mes projets<br><em>en géomatique.</em></h2>
+                        <p class="section-intro">Des réalisations concrètes en cartographie, analyse spatiale et outils SIG, présentées par thème.</p>
+                    </div>
+                </div>
+
+                <h3 class="projects-group-title">Projets principaux</h3>
+                <article class="project project-featured project-campus">
+                    <a class="project-campus-art" href="https://experience.arcgis.com/experience/ba12ea5bf11449afa0d02b61cec99880?org=lmu-admin" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la carte interactive du campus universitaire du Mans">
+                        <span class="campus-label">Webmapping</span>
+                        <span class="campus-title">Campus<br><em>du Mans</em></span>
+                        <span class="campus-caption">Carte interactive <b aria-hidden="true">↗</b></span>
+                    </a>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>Webmapping</span><span>Université du Mans</span></div>
+                        <h3>Le campus<br>à portée de carte.</h3>
+                        <p>Carte interactive du campus universitaire du Mans, avec navigation cartographique et informations contextualisées sur les bâtiments.</p>
+                        <div class="project-tags"><span>ArcGIS Experience</span><span>Cartographie interactive</span></div>
+                        <a class="text-link" href="https://experience.arcgis.com/experience/ba12ea5bf11449afa0d02b61cec99880?org=lmu-admin" target="_blank" rel="noopener noreferrer">Explorer la carte <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project project-featured project-agent">
+                    <div class="project-agent-art" aria-label="Schéma de l’agent local : Ollama, modèle IA local, PyQGIS et traitements géomatiques">
+                        <span class="agent-label">PROTOTYPE PERSONNEL · EN COURS</span>
+                        <div class="agent-flow"><span class="agent-node">OLLAMA<br><small>modèle local</small></span><span class="agent-arrow" aria-hidden="true">⟶</span><span class="agent-node agent-node-qgis">PYQGIS<br><small>outils SIG</small></span></div>
+                        <span class="agent-foot">DONNÉES LOCALES · QGIS / OSGeo4W</span>
+                    </div>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>IA & géomatique</span><span>Projet en cours</span></div>
+                        <h3>Un agent IA<br>dans QGIS.</h3>
+                        <p>Prototype personnel qui relie un modèle exécuté en local avec Ollama aux outils PyQGIS. Il aide à inspecter des données, lancer des traitements SIG et préparer des projets QGIS ou des cartes PDF.</p>
+                        <div class="project-tags"><span>Python</span><span>Ollama</span><span>PyQGIS</span><span>OSGeo4W</span></div>
+                        <p class="project-note">Les fichiers de travail restent sur la machine ; les traitements et leurs résultats sont journalisés. Le projet est en développement.</p>
+                    </div>
+                </article>
+
+                <article class="project project-featured project-report">
+                    <a class="report-cover" href="TURPIN_LP/TURPIN_LP/projet/rapport-stage-dreal-src-2026.pdf" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le rapport de stage à la DREAL sur l’évaluation du Schéma régional des carrières">
+                        <span class="report-cover-top"><span>RAPPORT DE STAGE</span><span>LICENCE PRO · 2026</span></span>
+                        <span class="report-cover-title">SCHÉMA<br>RÉGIONAL<br><em>DES CARRIÈRES</em></span>
+                        <span class="report-cover-bottom"><span>DREAL PAYS DE LA LOIRE</span><span>RAPPORT DE STAGE</span></span>
+                        <span class="report-cover-mark" aria-hidden="true">SRC</span>
+                    </a>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>Rapport de stage</span><span>Licence professionnelle</span></div>
+                        <h3>Évaluer le Schéma<br>régional des carrières.</h3>
+                        <p>Stage de cinq mois à la DREAL Pays de la Loire, consacré au bilan à mi-parcours du SRC. Le rapport présente la méthode d’évaluation des dispositions et un focus sur la réduction de la consommation d’espaces agricoles et forestiers : comparaison de deux méthodes, construction de l’indicateur et traitement des données d’arrêtés préfectoraux et GEREP.</p>
+                        <div class="project-tags"><span>DREAL Pays de la Loire</span><span>Analyse territoriale</span><span>Indicateurs</span></div>
+                        <div class="project-actions">
+                            <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/rapport-stage-dreal-src-2026.pdf" target="_blank" rel="noopener noreferrer">Consulter le rapport PDF <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/rapport-stage-dreal-src-2026.pdf" download="rapport-stage-dreal-src-2026.pdf">Télécharger le PDF <span aria-hidden="true">↓</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <h3 class="projects-group-title project-collection-title">Cartes et analyses</h3>
+                <article class="project project-reverse">
+                    <a class="project-image project-image-blue" href="TURPIN_LP/TURPIN_LP/projet/04_Etablissements_Sante_Rouen.png" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la carte d’accessibilité des établissements de santé dans le bassin rouennais">
+                        <img src="TURPIN_LP/TURPIN_LP/projet/04_Etablissements_Sante_Rouen.png" alt="Carte de l’accessibilité des établissements de santé et de la part des plus de 65 ans dans le bassin rouennais." loading="lazy">
+                        <span class="image-open" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="project-copy">
+                        <div class="project-meta"><span>Analyse territoriale</span><span>Bassin rouennais</span></div>
+                        <h3>Accès aux soins<br>et population senior</h3>
+                        <p>Représentation de la part des habitants de plus de 65 ans et des établissements de santé pour explorer les enjeux d’accessibilité à l’échelle du bassin rouennais.</p>
+                        <div class="project-tags"><span>Cartographie</span><span>Données territoriales</span></div>
+                        <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/04_Etablissements_Sante_Rouen.png" target="_blank" rel="noopener noreferrer">Voir la carte <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <span class="card-label">Analyse régionale</span>
+                        <div class="card-art card-art-terre" aria-hidden="true"><span>BRETAGNE</span><span>LOGEMENT<br>& TERRITOIRE</span></div>
+                        <div class="card-copy">
+                            <h3>Le parc de logements en Bretagne</h3>
+                            <p>Série de cartes thématiques et analyse spatiale de données immobilières régionales.</p>
+                            <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/05_Logements_Bretagne_Analyse.pdf" target="_blank" rel="noopener noreferrer">Voir la série de cartes <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <span class="card-label">Exercice cartographique</span>
+                        <div class="card-art card-art-sage" aria-hidden="true"><span>PLAN<br>D’INTERVENTION</span><span>PARC NATIONAL<br>DES ÉCRINS</span></div>
+                        <div class="card-copy">
+                            <h3>Devoir de cartographie</h3>
+                            <p>Travail académique de cartographie thématique, appliquant les principes de sémiologie graphique et de mise en page.</p>
+                            <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/06_Devoir_Cartographie.pdf" target="_blank" rel="noopener noreferrer">Consulter le devoir <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <span class="card-label">ArcGIS StoryMaps</span>
+                        <div class="card-art card-art-rose" aria-hidden="true"><span>LA POPULATION<br>EN CARTES</span><span>GUIDE DE<br>CARTOGRAPHIE</span></div>
+                        <div class="card-copy">
+                            <h3>Cartographier la population</h3>
+                            <p>Un guide pas à pas, de la collecte des données à la réalisation d’une carte thématique.</p>
+                            <a class="text-link" href="https://storymaps.arcgis.com/stories/bfff1a8d76dc4bd9958370d54f606b56" target="_blank" rel="noopener noreferrer">Lire le tutoriel <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+                    <article class="project-card project-map-card">
+                        <span class="card-label">Projet tutoré · QGIS</span>
+                        <div class="card-art card-art-sage" aria-hidden="true"><span>LE MANS<br>MÉTROPOLE</span><span>ESPACES VERTS</span></div>
+                        <div class="card-copy">
+                            <h3>Les espaces verts du Mans Métropole</h3>
+                            <p>Recensement et représentation cartographique des espaces verts, réalisé sous QGIS.</p>
+                            <div class="project-actions map-project-links">
+                                <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/01_Projet_Tutore_Carte_1.png" target="_blank" rel="noopener noreferrer">Ouvrir la carte 1 <span aria-hidden="true">↗</span></a>
+                                <a class="text-link" href="TURPIN_LP/TURPIN_LP/projet/02_Projet_Tutore_Carte_2.pdf" target="_blank" rel="noopener noreferrer">Ouvrir la carte 2 · PDF <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section" aria-labelledby="map-title">
+            <div class="shell map-layout">
+                <div class="map-copy">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Le territoire en mouvement</p>
+                    <h2 id="map-title">Du terrain<br><em>à la carte.</em></h2>
+                    <p>Les lieux de mes expériences et formations : Rennes, Nantes, Le Mans et la Mayenne.</p>
+                    <ul class="location-list" aria-label="Lieux à afficher sur la carte">
+                        <li><button class="map-link" type="button" data-location="dreal-nantes"><span>01</span> DREAL Pays de la Loire <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="master-rennes"><span>02</span> Master Géographie · Rennes 2 <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="scic-mayenne"><span>03</span> SCIC Mayenne Bois Énergie <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="cpie-mayenne"><span>04</span> CPIE Mayenne <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="domaine-lorgerie"><span>05</span> Domaine de Lorgerie <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="jardins-bedardiere"><span>06</span> Jardins de la Bédardière <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="velo-rail"><span>07</span> Le Vélo-rail <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="universite-mans"><span>08</span> Université du Mans <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                        <li><button class="map-link" type="button" data-location="agrocampus"><span>09</span> AgroCampus La Germinière <span class="location-arrow" aria-hidden="true">↗</span></button></li>
+                    </ul>
+                </div>
+                <div class="map-frame">
+                    <div id="map" role="region" aria-label="Carte interactive des lieux d’expérience et de formation" tabindex="0">
+                        <p class="map-fallback">La carte interactive est indisponible hors connexion.</p>
+                    </div>
+                    <p class="map-credit">Fond de carte © Esri, HERE, Garmin, FAO, NOAA, USGS, OpenStreetMap contributors et GIS User Community</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section shell" id="parcours" aria-labelledby="journey-title">
+            <div class="resume-heading">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> Expérience & formation</p>
+            <h2 id="journey-title">Parcours</h2>
+            </div>
+            <div class="resume-columns">
+                <div class="resume-column">
+                    <h3 class="column-title">Expérience professionnelle</h3>
+                    <article class="timeline-item">
+                        <span class="timeline-date">2026 · 5 mois</span>
+                        <h4>Géomaticien</h4>
+                        <p>DREAL Pays de la Loire <span>· Nantes (44)</span></p>
+                        <ul><li>Analyse et gestion de données ; création d’une base de données régionale et cartographie.</li><li>Automatisation de traitements, documents de gestion de la ressource et vulgarisation de méthodes géomatiques.</li></ul>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-date">Oct. — nov. 2024 · 6 sem.</span>
+                        <h4>Technicien bocager</h4>
+                        <p>SCIC Mayenne Bois Énergie <span>· Parigné-sur-Braye (53)</span></p>
+                        <ul><li>Bilans de coûts pour 16 chantiers et inventaire des stocks de bois.</li><li>Cartes diagnostiques des haies et continuités bocagères sous QGIS.</li></ul>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-date">Avr. 2024 · 2 sem.</span>
+                        <h4>Technicien biodiversité</h4>
+                        <p>CPIE Mayenne <span>· Mayenne (53)</span></p>
+                        <ul><li>Inventaires faune-flore sur 8 sites et fiches espèces à visée pédagogique.</li></ul>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-date">Mars 2024 · 2 sem.</span>
+                        <h4>Ouvrier forestier</h4>
+                        <p>Domaine de Lorgerie <span>· Averton (53)</span></p>
+                        <ul><li>Élagage, entretien, suivi sanitaire des parcelles et maintenance du matériel.</li></ul>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-date">Juin — août 2023 · 3 mois</span>
+                        <h4>Agent d’animation territoriale</h4>
+                        <p>Le Vélo-rail <span>· Saint-Loup-du-Gast (53)</span></p>
+                        <ul><li>Accueil d’environ 400 visiteurs et coordination de plus de 50 réservations par mois.</li></ul>
+                    </article>
+                </div>
+                <div class="resume-column">
+                    <h3 class="column-title">Formation</h3>
+                    <article class="timeline-item education-item">
+                        <span class="timeline-date">2026 — 2028</span>
+                        <h4>Master Géographie et géomatique</h4>
+                        <p>Université Rennes 2 <span>· Rennes (35)</span></p>
+                        <ul><li>Master en cours ; approfondissement en géographie et géomatique.</li></ul>
+                    </article>
+                    <article class="timeline-item education-item">
+                        <span class="timeline-date">2025 — 2026</span>
+                        <h4>Licence professionnelle Cartographie, Topographie et SIG</h4>
+                        <p>Université du Mans</p>
+                        <ul><li>Formation diplômante en cartographie, topographie et systèmes d’information géographique.</li></ul>
+                    </article>
+                    <article class="timeline-item education-item">
+                        <span class="timeline-date">2023 — 2025</span>
+                        <h4>BTSA Gestion forestière</h4>
+                        <p>AgroCampus La Germinière · Le Mans</p>
+                        <ul><li>Gestion forestière, écologie et cartographie forestière.</li></ul>
+                    </article>
+                    <div class="qualifications">
+                        <h3 class="column-title">Qualifications <span>En bref</span></h3>
+                        <p>Permis B · véhicule personnel <i>—</i> Permis cariste <i>—</i> SST <i>—</i> Certificat phytosanitaire <i>—</i> PIX, 445 points</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="competences" aria-labelledby="skills-title">
+            <div class="shell">
+                <div class="skills-heading">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Outils & savoir-faire</p>
+                    <h2 id="skills-title">Cartographier.<br><em>Analyser. Transmettre.</em></h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-item"><span class="skill-index">01</span><h3>SIG & cartographie</h3><p>QGIS · ArcGIS · MapInfo · analyse de données géospatiales · cartes interactives · automatisation · Inkscape</p></article>
+                    <article class="skill-item"><span class="skill-index">02</span><h3>Terrain & diagnostics</h3><p>Inventaires naturalistes · analyse d’habitats · reconnaissance végétale · relevés de terrain</p></article>
+                    <article class="skill-item"><span class="skill-index">03</span><h3>Environnement</h3><p>Sylviculture · outils forestiers · diagnostic environnemental, écologique et hydrologique</p></article>
+                    <article class="skill-item"><span class="skill-index">04</span><h3>Informatique & données</h3><p>Python · HTML · SQL · PostGIS · LibreOffice · gestion de bases de données géographiques</p></article>
+                    <article class="skill-item"><span class="skill-index">05</span><h3>Intelligence artificielle</h3><p>IA et modèles exécutés en local · automatisation de traitements SIG · conception d’un agent géomatique local</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="internship-section shell" id="stage" aria-labelledby="internship-title">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Opportunité de stage</p>
+            <div class="internship-content">
+                <h2 id="internship-title">Un stage<br><em>en géomatique.</em></h2>
+                <div>
+                    <p>Je recherche un stage de mai à septembre dans le cadre de mon Master Géographie et géomatique à l’Université Rennes 2, autour de l’analyse spatiale et des données territoriales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section shell" id="contact" aria-labelledby="contact-title">
+            <div class="contact-topline"><span class="eyebrow"><span class="eyebrow-dot"></span> Une mission, un projet ?</span><span>Disponible à l’échange</span></div>
+            <h2 id="contact-title">Parlons<br><em>territoire.</em></h2>
+            <a class="contact-email" href="mailto:romainturpin0822@gmail.com">romainturpin0822@gmail.com <span aria-hidden="true">↗</span></a>
+            <div class="contact-details"><a href="tel:0767471207">+33 7 67 47 12 07</a><span>Rennes, France</span></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <a class="wordmark footer-mark" href="#accueil" aria-label="Retour en haut">RT<span>.</span></a>
+            <p>Ingénieur géomaticien · Géographie & géomatique</p>
+            <span>Romain Turpin · 2026</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
