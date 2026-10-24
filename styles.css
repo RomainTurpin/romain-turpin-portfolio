@@ -43,7 +43,7 @@ button { color: inherit; font: inherit; }
 .hero-copy { position: relative; z-index: 1; padding: 20px 0 0 7%; }
 .eyebrow { display: flex; align-items: center; gap: 11px; margin: 0; color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .09em; line-height: 1.6; text-transform: uppercase; }
 .eyebrow-dot { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: var(--orange); }
-.hero h1 { margin: 28px 0 35px; font-family: var(--display); font-size: clamp(82px, 11vw, 152px); font-weight: 600; letter-spacing: -.095em; line-height: .82; }
+.hero h1 { margin: 28px 0 35px; font-family: var(--display); font-size: clamp(82px, 11vw, 152px); font-weight: 600; letter-spacing: -.025em; line-height: .88; }
 .hero h1 > span:first-of-type { font-family: var(--display); font-weight: 600; font-style: normal; letter-spacing: inherit; }
 .hero-period { color: var(--orange); }
 .hero-bottom { display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 520px; margin-bottom: 28px; }
