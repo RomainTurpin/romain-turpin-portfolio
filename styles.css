@@ -201,11 +201,8 @@ button { color: inherit; font: inherit; }
 .skill-item h3 { margin: 19px 0 8px; font-family: var(--display); font-size: 18px; font-weight: 700; letter-spacing: -.025em; }
 .skill-item p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.8; }
 
-.contact-section { position: relative; padding-top: 115px; padding-bottom: 110px; }
-.contact-topline { display: flex; justify-content: space-between; align-items: center; }
-.contact-topline > span:last-child { color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
-.contact-section h2 { margin: 34px 0 24px; font-size: clamp(70px, 11vw, 135px); }
-.contact-section h2 em { color: var(--green); }
+.contact-section { position: relative; padding-top: 65px; padding-bottom: 70px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
 .contact-email { display: inline-flex; align-items: center; gap: 20px; padding-bottom: 7px; border-bottom: 1px solid var(--ink); font-size: clamp(15px, 2.4vw, 24px); font-weight: 600; transition: color .2s ease; }
 .contact-email:hover { color: var(--orange); }
 .contact-email span { color: var(--orange); }
@@ -337,9 +334,7 @@ button { color: inherit; font: inherit; }
     .skill-item h3 { margin-top: 15px; font-size: 16px; }
     .skill-item p { font-size: 14px; }
     .contact-section { padding-top: 75px; padding-bottom: 72px; }
-    .contact-topline { align-items: flex-start; gap: 10px; }
-    .contact-topline > span:last-child { padding-top: 3px; font-size: 12px; text-align: right; }
-    .contact-section h2 { margin: 27px 0 20px; font-size: clamp(68px, 17vw, 100px); }
+    .contact-section { padding-top: 65px; padding-bottom: 65px; }
     .internship-section { padding-top: 58px; padding-bottom: 58px; }
     .internship-content { grid-template-columns: 1fr; gap: 20px; margin-top: 18px; }
     .internship-content h2 { font-size: clamp(40px, 11vw, 58px); }
